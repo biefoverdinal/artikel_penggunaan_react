@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #000000;
+  font-style: oblique;
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+body {
+  background: linear-gradient(to right, #5db4c3ca, #bc11d380);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.carousel img {
+  width: 100%;
+  height: 400px; /* Atur tinggi gambar menjadi 400px untuk semuanya */
+  object-fit: cover; /* Memastikan gambar diisi secara proporsional tanpa memanjang atau memotong */
+}
+
+.carousel {
+  margin-top: -20px;
+}
+
+/* Media query untuk perangkat dengan lebar layar kurang dari 768px */
+@media (max-width: 768px) {
+  .carousel img {
+    height: auto; /* Mengubah tinggi gambar menjadi otomatis */
+  }
+}
